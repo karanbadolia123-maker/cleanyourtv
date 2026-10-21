@@ -1,0 +1,14 @@
+{
+  "background_color": "#070A14",
+  "wallpaper": true,
+  "wallpaper_dim": 8,
+  "cinematic_home": true,
+  "ambient_glow": true,
+  "dock_row": true,
+  "dock_title": true,
+  "columns": 4,
+  "rows_below_dock": 1,
+  "animations": true,
+  "advanced_effects": false,
+  "reduced_motion": false
+}
