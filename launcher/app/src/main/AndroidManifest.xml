@@ -107,6 +107,21 @@
                 android:resource="@xml/home_key_service" />
         </service>
 
+        <!-- Opens the system power menu for the glass home screen's Power and Restart buttons. Opt-in: enable it once
+             over adb, see GlassHomeActivity. -->
+        <service
+            android:name=".PowerDialogService"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/power_dialog_service" />
+        </service>
+
         <!-- The same clock, started by Home itself after home_idle_clock_minutes without input. -->
         <activity
             android:name=".ClockActivity"

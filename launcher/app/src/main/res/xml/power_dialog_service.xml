@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- No events and no key filtering: the service only exists so the glass home can open the system
+     power menu (Power off, Restart), which an ordinary app is not allowed to do on its own. -->
+<accessibility-service xmlns:android="http://schemas.android.com/apk/res/android"
+    android:accessibilityFeedbackType="feedbackGeneric"
+    android:description="@string/power_service_description" />
