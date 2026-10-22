@@ -42,6 +42,14 @@
         android:allowBackup="false"
         android:localeConfig="@xml/locales_config">
 
+        <!-- Liquid-glass home, started by hand (am start) while it is being built; not a HOME app yet. -->
+        <activity
+            android:name=".GlassHomeActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden|uiMode"
+            android:screenOrientation="landscape" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
