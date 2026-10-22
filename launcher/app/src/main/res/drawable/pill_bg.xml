@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Focused: bright glass with a soft blue-white luminous ring instead of a hard border. -->
     <item android:state_focused="true">
         <shape android:shape="rectangle">
-            <solid android:color="#F5FFFFFF" />
+            <gradient android:angle="270" android:startColor="#FFFFFFFF" android:endColor="#F0DCE6FF" />
+            <stroke android:width="3dp" android:color="#8CA9C3FF" />
             <corners android:radius="21dp" />
         </shape>
     </item>
@@ -14,10 +16,11 @@
             <corners android:radius="21dp" />
         </shape>
     </item>
+    <!-- Resting: translucent frosted glass, lighter at the top like light catching the edge. -->
     <item>
         <shape android:shape="rectangle">
-            <gradient android:angle="270" android:startColor="#2EFFFFFF" android:endColor="#14FFFFFF" />
-            <stroke android:width="1dp" android:color="#38FFFFFF" />
+            <gradient android:angle="270" android:startColor="#40FFFFFF" android:endColor="#14DCE6FF" />
+            <stroke android:width="1dp" android:color="#52FFFFFF" />
             <corners android:radius="21dp" />
         </shape>
     </item>
